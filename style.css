@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  width: 200px;
+  height: 250px;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ph-clock {
+  font-size: 22px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#add-note {
+  font-size: 20px;
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+#notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.note-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.delete-btn {
+  margin-right: 8px;
+  color: #888;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.delete-btn:hover {
+  color: #f55;
+}
+
+.note {
+  background-color: #222;
+  color: #eee;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  flex-grow: 1;
+  min-height: 28px;
+  overflow-wrap: break-word;
+  cursor: text;
+}
+
+
+.note .delete-btn {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.note .delete-btn:hover {
+  color: #f55;
+}
+
+
+.time-selector {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+.time-tiles {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.time-tile {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #eee;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.time-tile:hover {
+  background-color: #555;
+}
+
+.time-tile.active {
+  background-color: #888;
+  color: #111;
+  font-weight: bold;
+}

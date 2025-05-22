@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pomodoro Sticky</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Timer & Controls -->
+    <div class="timer-container">
+      <div id="timer" class="timer">25:00</div>
+      <div class="controls">
+        <button id="start" title="Start Timer">▶</button>
+        <button id="reset" title="Reset Timer">⟲</button>
+      </div>
+    </div>
+
+    <!-- Time Selection Tiles -->
+    <div class="time-selector">
+      <span>Set Time:</span>
+      <div class="time-tiles">
+        <button class="time-tile" data-time="300" title="5 minutes">5</button>
+        <button class="time-tile" data-time="600" title="10 minutes">10</button>
+        <button class="time-tile" data-time="900" title="15 minutes">15</button>
+        <button class="time-tile" data-time="1500" title="25 minutes">25</button>
+        <button class="time-tile" data-time="1800" title="30 minutes">30</button>
+        <button class="time-tile" data-time="2700" title="45 minutes">45</button>
+        <button class="time-tile" data-time="3600" title="60 minutes">60</button>
+      </div>
+    </div>
+
+    <!-- Sticky Notes Section -->
+    <div id="notes-container" class="notes-container"></div>
+    <button id="add-note" class="add-note" title="Add Note">+</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Pomodoro Sticky",
+  "version": "1.1",
+  "description": "Minimal Pomodoro timer with sticky notes",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
